@@ -1,12 +1,12 @@
 body {
-  background: #e8d2d3;
+  background: #00abf0;
 }
 #gameContainer {
   text-align: center;
 }
 
 #gameBoard {
-  border: 3px solid black;
+  border: 3px solid #112e42;
 }
 
 #scoreText {
