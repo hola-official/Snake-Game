@@ -1,5 +1,5 @@
 body {
-  background: #081b29;
+  background: #00abf0;
 }
 #gameContainer {
   text-align: center;
@@ -34,5 +34,4 @@ body {
 
 .footer-text p {
   font-size: 1.6rem;
-  color: #fff;
 }
