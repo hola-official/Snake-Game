@@ -99,11 +99,34 @@ function drawSnake() {
 
 function changeDirection(event) {
   const keypressed = event.keyCode;
-  console.log(keypressed);
+  // console.log(keypressed);
   const LEFT = 37;
   const UP = 38;
   const RIGHT = 39;
   const DOWN = 40;
+
+  const goingUp = (yVelocity == -unitSize);
+  const goingDown = (yVelocity == unitSize);
+  const goingLeft = (xVelocity == unitSize);
+  const goingRight = (xVelocity == -unitSize);
+
+  switch(true) {
+    case (keypressed == LEFT && !goingRight):
+      xVelocity = -unitSize
+    yVelocity = 0
+    break;
+    case (keypressed == UP && !goingDown):
+      yVelocity = -unitSize
+      xVelocity = 0;
+      break;
+      case (keypressed == RIGHT && !goingLeft):
+      xVelocity = unitSize
+      yVelocity = 0
+      break;
+      case (keypressed == DOWN && !goingUp):
+        xVelocity = 0;
+        yVelocity = unitSize
+  }
 }
 
 function checkGameOver() {}
