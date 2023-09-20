@@ -1,5 +1,5 @@
 body {
-  background: #00abf0;
+  background: #081b29;
 }
 #gameContainer {
   text-align: center;
@@ -13,11 +13,26 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
 }
+
 #resetBtn {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   width: 100px;
   height: 50px;
   border: 4px solid;
   border-radius: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: #112e42;
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+  color: #fff;
 }
